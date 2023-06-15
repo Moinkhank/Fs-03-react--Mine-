@@ -23,7 +23,7 @@ export const getUsers = (setUsers, setState) => {
 };
 
 export const getUsersData = (setUsers) => {
-  axios.get("http://localhost:5001/results").then((res) => {
+  axios.get("http://localhost:3001/results").then((res) => {
     console.log(res);
     setUsers(res.data);
   });
@@ -31,7 +31,7 @@ export const getUsersData = (setUsers) => {
 
 export const sendUserDetails = (userdata, setUsers) => {
   axios
-    .post("http://localhost:5001/results", userdata)
+    .post("http://localhost:3001/results", userdata)
     .then((res) => {
       alert("User successfully Added");
       getUsersData(setUsers);
@@ -43,7 +43,7 @@ export const sendUserDetails = (userdata, setUsers) => {
 
 export const deleteUserData = (id, setUsers) => {
   axios
-    .delete(`http://localhost:5001/results/${id}`)
+    .delete(`http://localhost:3001/results${id}`)
     .then(() => {
       alert("Removed User Successfully");
       getUsersData(setUsers);

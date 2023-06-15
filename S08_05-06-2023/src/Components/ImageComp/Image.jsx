@@ -12,8 +12,9 @@ function Image(props) {
       ? "React Image Component"
       : "Angular Image Component";
 
+
     return () => {};
-  }, [title, reactimg]);
+  },[reactimg,title]);
 
   return (
     <div>

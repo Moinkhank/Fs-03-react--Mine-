@@ -4,6 +4,8 @@ import { useState } from "react";
 import Nav from "./Components/Nav/Nav";
 import Image from "./Components/ImageComp/Image";
 import Text from "./Components/TextComp/Text";
+import Pagination from "./Components/Pagination/Pagination";
+
 function App(props) {
   const [showImage, setShowImage] = useState(false);
 
@@ -27,7 +29,9 @@ function App(props) {
           Show Text
         </button>
       </div>
+   
       {showImage ? <Image /> : <Text />}
+        <Pagination/>
     </div>
   );
 }

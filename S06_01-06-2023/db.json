@@ -34,6 +34,16 @@
       "name": "Neha Sharma",
       "gender": "female",
       "id": 10
+    },
+    {
+      "name": "moin",
+      "gender": "male",
+      "id": 11
+    },
+    {
+      "name": "aliya female",
+      "gender": "female",
+      "id": 12
     }
   ]
 }
